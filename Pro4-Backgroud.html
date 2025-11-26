@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+    	<title>Title Name will go here</title>
+    
+		<style>
+			
+			#backgroundorigin
+			{
+				border:1px dotted green;
+				padding:25px;
+				background-image:url('media/flower1.png');
+				background-repeat:no-repeat;
+				background-position:right top;
+				background-origin:border-box;
+			}
+			/* Background position value:left top
+left center
+left bottom
+right top
+right center
+right bottom
+center top
+center center
+center bottom
+x% y% */
+			
+			#backgroundorigin1
+			{
+				border:10px dotted green;
+				padding:25px;
+				text-align: justify;
+				background-image:url('media/flower1.png');
+				background-repeat:no-repeat;
+				background-position:20% 30%;
+				background-origin:border-box;
+			}		
+			
+			/* Syntax
+			
+			background-origin: content-box--The background image starts from the upper left corner of the content
+			| padding-box --Default value. The background image starts from the upper left corner of the padding 
+			| border-box --The background image starts from the upper left corner of the border;
+			
+			*/
+			
+		</style>
+    </head>
+	
+    <body>
+		<div id="backgroundorigin">
+			This div containing the image with border-box property.
+			This div containing the image with border-box property.
+			This div containing the image with border-box property.
+			This div containing the image with border-box property.
+		</div>
+		<br><br>
+		
+		<div id="backgroundorigin1">
+			This div containing the image with content box property.
+			This div containing the image with content box property.
+			This div containing the image with content box property.
+			This div containing the image with content box property.
+		</div>
+    </body>
+    
+</html>

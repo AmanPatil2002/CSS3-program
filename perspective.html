@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            border: 2px solid black;
+            perspective: 100px;
+            margin: auto;
+        }
+        .div2{
+            position: absolute;
+            padding: 50px;
+            background: yellow;
+            border: 1px solid black;
+            transform-style: preserve-3d;
+            transform: rotateY(40deg);
+        }       
+    </style>
+</head>
+<body>
+    <div class="div1">
+        div 1
+        <div class="div2"></div> 
+    </div>   
+</body>
+</html>

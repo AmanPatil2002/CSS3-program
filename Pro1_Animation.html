@@ -1,0 +1,76 @@
+ 
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+    	 <title>Title Name will go here</title>
+    </head>
+	
+	<style>
+		#animated_div
+		{
+			text-align:center;
+			width:60px;
+			height:60px;
+			background:#6699FF;
+			color:#ffffff;
+			position:relative;
+			font-weight:bold;
+			font-size:20px;
+			padding:10px;
+			animation:abc 2s infinite 3s alternate ease-out;
+			/*
+			animation-delay: ; (ms, sec) (1000=1s)
+
+			animation-timing: (ms, sec)
+			animation-iteration-count: infinite/number;
+
+			animation-name: ; 
+
+			animation-direction: normal|reverse|alternate|alternate-reverse;
+
+			animation-timing-funtion:  
+			ease[start slow then fast then end slowly]
+			ease-in[slow start]
+			ease-out[slow end]
+			ease-in-out[slow start and end]
+			linear[same speed from start to end]
+			cubic-bezier[lets you define your value from 0-1]
+
+			shorthand property:
+			animation: animation-name ,animation-timing, animation-iteration-count, animation-timing-function,
+			animation-direction,
+			animation-delay;
+
+			second way of writing animation: ;
+			@keyframes animation name: ;
+			from{property};
+			to{property}
+
+			*/
+			border-radius:5px;
+		}
+		 
+		@keyframes abc
+		{
+			0%   {left:0px;}
+			20%  {left:50px; background-color: green;}
+			40%  {left:140px; background-color: red;}
+			60%  {left:280px; background-color: yellow;}
+			80%  {left:425px; background-color: blue;}
+			100% {left:0px; background-color: pink;}
+		}
+
+	</style>
+    
+    <body>
+
+    	<div id="animated_div">
+			CSS3
+			<span style="font-size:10px;">Animation effect</span>
+		</div>
+
+    </body>
+    
+</html>

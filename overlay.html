@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .overlay{
+            position: absolute;
+            width: 300px;
+            overflow: hidden;
+            background-color: black;
+            background-color: rgba(14, 13, 13, 0.466);
+            opacity: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 300px;
+            transition: transform, 3s;
+        }
+        .content{
+            text-align: center;
+            width: 100%;
+        }
+        .content h2{
+            margin-top: 36%;
+            color: white;
+        }
+        .content button{
+            outline: none;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid rgb(250, 0, 0);
+            border-radius: 10px;
+        }
+        .content button:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px rgb(247, 236, 236);
+        }
+        .div1:hover .overlay{
+            opacity: 1;
+            transform: translateY(-300px);
+            height: 300px;
+            bottom: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2oASENe7GdCli1KnAl6cnDnuD6lGT60txQ&s" width="300px" height="300px">
+        <div class="overlay">
+        <div class="content">
+            <h2>Overlay</h2>
+            <button>Read More....</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

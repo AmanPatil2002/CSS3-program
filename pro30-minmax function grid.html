@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Minmax function</title>
+	<style type="text/css">
+		.container{
+			background: wheat;
+			width: 80%;
+			margin: 45px auto 0;
+
+			display: grid;
+			grid-template-columns: /*max-content 1fr 1fr min-content;/*(in min width it apply width of big words);*/
+			minmax(150px,10%) 1fr 1fr min-content;
+			grid-template-rows: repeat(2, minmax(150px,min-content));/*(2,min-content);*/ /*(2,minmax(150px,min-content));*/
+			grid-gap: 15px;
+		}
+		.item1{
+			background: red;
+		}
+		.item2{
+			background: green;
+		}
+		.item3{
+			background: yellow;
+		}
+		.item4{
+			background: lightblue;
+		}
+		.item5{
+			background: cyan;
+		}
+		.item6{
+			background: magenta;
+		}
+		.item7{
+			background: orange;
+		}
+		.item8{
+			background: gold;
+		}
+	</style>
+</head>
+<body><!--It used to change a height and width of the content-->
+	<div class="container">
+	<div class="item1">one 
+	</div>
+	<div class="item2">two</div>
+	<div class="item3">Three</div>
+	<div class="item4">Four four five sicx sdsfkdddddddkdsfksssssssssfsfjhfjkhsdgk</div>
+	<div class="item5">Five</div>
+	<div class="item6">Six add some content </div>
+	<div class="item7">Sevendhgsjfkashfjhalsfhlahsahfhalhfahlhaflkhaklfhkladhghgaskjfkjafkaf</div>
+	<div class="item8">Eight</div>
+	</div>
+
+</body>
+</html>

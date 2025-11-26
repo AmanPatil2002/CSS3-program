@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grid </title>
+	<style type="text/css">
+		.container{
+			background: #eee;
+			width: 700px;
+			margin: 70px 0 0 50px;
+            display:grid;
+			grid-template-columns: 300px 300px auto/*25% 25%, or comibanation of %,px,auto/one more unit in grid is fr(fraction)ex--2fr 1fr 1fr or repeat(3,200px)*/;
+			
+			grid-template-rows: 200px 200px 100px;/*fr is also available in rows only give a height in container :1fr 200px;*/
+			
+			grid-gap: 5px;/*two value*/
+
+		}
+		.items1{
+			background: orangered;
+		}
+		.items2{
+			background: yellowgreen;
+		}
+		.items3{
+			background: slateblue;
+		}
+		.items4{
+			background: hotpink;
+		}
+		.items5{
+			background: royalblue;
+		}
+		.items6{
+			background: cyan;
+		}
+	</style>
+</head>
+<body>
+	
+<div class="container">
+	<div class="items1">First</div>
+	<div class="items2">Second</div>
+
+	<div class="items3">Third</div>
+
+	<div class="items4">Fourth</div>
+
+	<div class="items5">Fifth</div>
+
+	<div class="items6">Sixth</div>
+	</div>
+
+
+	<!--1.Two dimensional grid system it means we handle rows and columns  handle in  equal 
+
+	2.CSS Grid layout replaces float layout
+	3.Fast &clean Code(code getting short)
+	4. No need of CSS Frameworks(bootstrap/ or any frameworks)
+properties
+grid-template-rows
+grid-template-columns
+grid-template-areas
+grid-template
+grid-row-gap
+grid-column-gap
+grid-gap
+justify-items
+align-items
+justify-content
+align-content
+grid-auto-rows
+grid-auto-columns
+grid-auto-flow
+grid-row-start
+grid-row-end
+grid-row
+grid-column-start
+grid-column-end
+grid-column
+grid-area
+justify-self
+align-self
+order-->
+
+
+
+</body>
+</html>

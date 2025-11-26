@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        <title>Title Name will go here</title>
+ 
+        <style>
+
+            .box img
+            {
+                padding: 10px;
+                border-radius: 5px;
+                margin-left: 0;
+                
+                transition: 3s all linear;
+				
+				/*transition
+					shorthand property:
+					
+					transition: delay timing-function duration property;
+					
+					transition-delay: milliseconds | seconds
+					transition-timing-function: 
+					 ease | ease-in | ease-out | ease-in-out |
+					 linear | cubic-bezier(n,n,n,n)
+					transition-duration: milliseconds | seconds (1s = 1000)
+					
+                    transition-property : all
+										
+				*/
+            }
+             
+            .box img:hover
+            {
+                width: 540px;
+                height: 520px;
+                transform:rotate(360deg);
+                
+            }
+             
+        </style>
+     
+    </head>
+    <body>
+ 
+        <p>Hover on object to see it in action</p>
+        <div class="box">
+            
+                <img src="media/star.png" width="20" height="20"/>
+      
+        </div>
+ 
+    </body>
+     
+</html>

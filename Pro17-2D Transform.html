@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        <title>Title Name will go here</title>
+ 
+        <style>
+ 
+            #div_nomatrix
+            {
+                float:left;
+                margin:50px 0 0 50px;               
+                width:100px;
+                height:100px;
+                background-color:rgba(255,0,0,0.5);
+                border:1px solid #000000;
+                opacity:0.4;
+                filter:alpha(opacity=40);
+            }
+             
+            #div_matrix
+            {
+                position:absolute;
+                margin:50px 0 0 50px;
+                width:100px;
+                height:100px;
+                background-color:rgba(255,0,0,0.5);
+                border:1px solid #000000;
+                transform:matrix(0.766,0.7,-0.4,0.766,0,0);/*scale(x) skew(X),skew(Y) 0-1 6-value*/
+             
+            }
+             
+        </style>
+     
+    </head>
+    <body>
+ 
+        <div id="div_nomatrix"> original</div>
+        <div id="div_matrix">After matrix method</div>      
+         
+    </body>
+     
+</html>

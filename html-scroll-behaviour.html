@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        #div1{
+            width: 100vw;
+            height: 100vh;
+            background-color: red;
+            padding: 60px;  
+        }
+        #div2{
+            width: 100vw;
+            height: 100vh;
+            background-color: blue;
+            padding: 60px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        This is div1<br><br><br><br>
+        <a href="#div2">Go to the 2nd Div</a>
+    </div>
+    <div id="div2">
+        This is div2<br><br><br><br>
+        <a href="#div1">Go to the 1st Div</a>
+    </div>
+</body>
+</html>

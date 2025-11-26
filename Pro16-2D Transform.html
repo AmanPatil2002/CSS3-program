@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        <title>Title Name will go here</title>
+ 
+        <style>
+ 
+            #div_noskew
+            {
+                float:left;
+                margin:50px 0 0 50px;               
+                width:100px;
+                height:100px;
+                background-color:rgba(255,0,0,0.5);
+                border:1px solid #000000;
+                opacity:0.4;
+                filter:alpha(opacity=40);
+            }
+             
+            #div_skew
+            {
+                position:absolute;
+                margin:50px 0 0 50px;
+                width:100px;
+                height:100px;
+                background-color:rgba(255,0,0,0.5);
+                border:1px solid #000000;
+                transform:skew(30deg,20deg);
+                
+            }
+             
+        </style>
+     
+    </head>
+    <body>
+ 
+        <div id="div_noskew"> original</div>
+        <div id="div_skew">After skew method</div>      
+         
+    </body>
+     
+</html>

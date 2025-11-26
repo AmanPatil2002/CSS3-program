@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+	<style type="text/css">
+.heart
+{
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin-left: 450px;
+    margin-top: 300px;
+    position: relative;
+    transform: rotate(45deg);
+    animation-name: heartbeat;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.heart::before
+{
+    position: absolute;
+    content: "";
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transform: translateY(-75px);
+    border-radius: 50%;
+}
+
+.heart::after
+{
+    position: absolute;
+    content: "";
+    border: 1px solid red;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transform: translateX(-75px);
+    border-radius: 50%;
+}
+
+@keyframes heartbeat {
+    
+    0%{transform: rotate(45deg) scale(1.4,1.4);}
+
+    25%{transform: rotate(45deg) scale(1.2,1.2);}
+
+    50%{transform: rotate(45deg) scale(1.4,1.4);}
+
+    75%{transform: rotate(45deg) scale(1.2,1.2);}
+
+    100%{transform: rotate(45deg) scale(1.4,1.4);}
+}
+	</style>
+</head>
+<body>
+<div class="heart"></div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+        }
+        .div1{
+            width: 350px;
+            height: 350px;
+            background-color: rgb(76, 249, 247);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.788);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            margin-left: 40px;
+            transition: transform, 2s;  
+        }
+        .image1{
+            border-radius: 50%;
+            background-color: white;
+            
+        }
+        h2{
+            user-select: none;
+            font-weight: 200;
+        }
+        .div1 p{
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+            user-select: none;
+        }
+        .div1:hover{
+            transform: translateY(-20px);
+        }
+        .div1:hover .image1{           
+            transform: skew(140deg);       
+        }
+        .div2{
+            width: 350px;
+            height: 350px;
+            background-color: rgb(210, 223, 217);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.788);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            margin-left: 40px;
+            transition: transform, 2s; 
+        }
+        .div2:hover{
+            transform: translateY(-20px);
+        }
+        .div2 h2{
+            padding-top: 10%;
+        }
+        .div2 p{
+            text-align: justify;
+            padding-top: 15px;
+            padding: 12px;
+        }
+        i{
+            color: yellow;
+            width: 20px;
+            height: 20px;
+        }
+        a{
+            text-decoration: none;
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 40%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 2px black;
+        }
+        a:hover{
+            background-color: rgb(210, 223, 217);
+            color: orangered;
+            border: 2px solid orangered;
+            border-radius: 5px;
+            font-weight: 300;
+        }
+        .tag{
+            width: 60px;
+            height: 40px;
+            margin-top: -20px;
+            margin-left: -70%;
+            padding: 6px;
+            border-radius: 6px;
+        }
+        .div2:hover .tag{
+            background-color: yellow;
+        }
+        .starrow{
+            display: flex;
+        }
+        .star{
+            width: 10px;
+            height: 10px;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="image/congrats.png" class="image1" width="150px" height="150px"/>
+            <h2>Full Stack Developer</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, deserunt nostrum? Provident, aspernatur</p>
+        </div>
+        <div class="div2">
+            <img src="image/best-seller.png" class="tag">
+            <h2>Full Stack Developer</h2>
+                <div class="starrow">
+                    <img src="image/star.png" class="star"/>
+                    <img src="image/star.png" class="star"/>
+                    <img src="image/star.png" class="star"/>
+                    <img src="image/star.png" class="star"/>
+                    <img src="image/star.png" class="star"/>
+                </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, deserunt nostrum? Provident</p>
+            <a href="">Select</a>
+        </div>
+    </div>
+</body>
+</html>

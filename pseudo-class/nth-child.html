@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div :nth-child(2){
+            color: red;
+            font-size: 20px;
+            text-shadow: 2px 2px 3px black;
+        }
+        p:nth-last-child(3){
+            color: red;
+            font-size: 20px;
+            text-shadow: 2px 2px 3px black;
+        }
+        p:nth-last-of-type(odd){
+            color: aqua;
+        }
+        p:nth-last-of-type(even){
+            color: rgb(240, 7, 248);
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div>Lorem ipsum dolor sit amet consectetur.</div>
+        <i>Lorem ipsum dolor sit amet consectetur.</i>
+        
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</body>
+</html>

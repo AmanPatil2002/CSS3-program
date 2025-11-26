@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child-selector>h2{
+            color: red;
+        }
+        p+div{
+            color: greenyellow;
+            border: 1px solid green;
+        }
+        span~p{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="child-selector">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</h2>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</div>
+        <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</i>
+    </div>
+    <div class="adjacent-sibling-selector">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</h2>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</div>
+        <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</i>
+    </div>
+    <div class="general-sibling-selector">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</p>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</div>
+        <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, similique.</i>
+    </div>
+
+
+
+
+</body>
+</html>

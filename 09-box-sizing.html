@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box-sizing css property</title>
+
+	<style type="text/css">
+		.mainWrapper {
+			width: 800px;
+			height: 150px;
+			border: 5px solid purple;
+		}
+
+		.child {
+			width: 50%;
+			height: 150px;
+			border: 5px solid green;
+			padding: 20px;
+			background-color: yellow;
+ 		box-sizing: border-box;
+			/* width is not increased, second value- content-box- deafault value*/
+			 display: inline;
+             float:left;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="mainWrapper">
+		<div class="child"></div>		
+		<div class="child"></div>		
+	</div>
+
+</body>
+</html>

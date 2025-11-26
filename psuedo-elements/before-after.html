@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::before{
+            content: 'HI';
+            font-size: 20px;
+            background-color: red;
+        }
+        h2::after{
+            content: 'Hello';
+            font-size: 20px;
+            background-color: red;
+        }
+        .div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            /*transform: rotate(45deg);*/
+        }
+        .div::after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(68, 0, 253);
+        }
+        .div::before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(158, 0, 145);
+        }
+        ul li::marker{
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello everyone........</h2>
+    <div class="div"></div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 1</li>
+        <li>Item 1</li>
+    </ul>
+
+</body>
+</html>
