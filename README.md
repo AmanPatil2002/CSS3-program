@@ -1,164 +1,184 @@
 # CSS3 Program
 
-This folder contains a collection of HTML demonstration projects for learning and practicing CSS3. Each file is a focused example covering selectors, box model, layout, typography, transforms, transitions, animations, and UI effects.
+A collection of HTML demo pages for learning and practicing CSS3. Each file is a focused example covering selectors, the box model, typography, Flexbox, Grid, transforms, transitions, animations, and UI effects.
 
-## How to use this folder
+## Table of Contents
 
-- Open any `.html` file in your browser to see the example in action.
-- Use the file name and section in this README to understand the primary CSS concept being demonstrated.
-- The subfolders contain dedicated demos for pseudo-classes, pseudo-elements, and exercise tasks.
+- [Project Structure](#project-structure)
+- [1. Selectors and Pseudo-classes](#1-selectors-and-pseudo-classes)
+- [2. Pseudo-elements](#2-pseudo-elements)
+- [3. Typography and Text](#3-typography-and-text)
+- [4. Box Model, Borders, and Backgrounds](#4-box-model-borders-and-backgrounds)
+- [5. Flexbox](#5-flexbox)
+- [6. Grid](#6-grid)
+- [7. Transforms and Transitions](#7-transforms-and-transitions)
+- [8. Animations](#8-animations)
+- [9. Filters, Images, and Visual Effects](#9-filters-images-and-visual-effects)
+- [10. User Interface Properties](#10-user-interface-properties)
+- [11. Components and Practice Tasks](#11-components-and-practice-tasks)
+- [Getting Started](#getting-started)
+- [Suggested Learning Path](#suggested-learning-path)
+- [Author](#author)
 
----
+## Project Structure
 
-## 1. Selectors and Pseudo-class demos
+```
+CSS3-program/
+├── image/                # Image assets used by the demos
+├── pseudo-class/         # Individual pseudo-class demos
+├── psuedo-elements/      # Pseudo-element demos
+├── tasks/                # Practice exercises
+├── *.html                # CSS topic demos (see sections below)
+├── grid basic diagram.png
+└── README.md
+```
 
-- `01-pseudo-class.html` — introductory pseudo-class demo, likely showing common selectors such as `:hover`, `:active`, `:focus`, and others.
-- `combinator-selector.html` — demonstrates combinator selectors such as descendant, child, adjacent sibling, and general sibling selectors.
-- `psuedo-class.html` — likely a general overview of pseudo-classes with practical examples.
-- `pseudo-class/active.html` — demonstrates the `:active` pseudo-class for buttons or interactive elements.
-- `pseudo-class/checked.html` — shows styling form inputs when they are checked using `:checked`.
-- `pseudo-class/empty.html` — uses `:empty` to style elements that contain no children or text.
-- `pseudo-class/first-last-child.html` — covers `:first-child` and `:last-child` selectors.
-- `pseudo-class/firstlast-of-type.html` — covers `:first-of-type` and `:last-of-type` within sibling groups.
-- `pseudo-class/focus.html` — shows styling focused inputs and interactive controls using `:focus`.
-- `pseudo-class/not.html` — demonstrates the negation pseudo-class `:not()`.
-- `pseudo-class/nth-child.html` — shows positional selection using `:nth-child()` patterns.
-- `pseudo-class/visited.html` — demonstrates styling visited links with `:visited`.
+## 1. Selectors and Pseudo-classes
 
-## 2. Pseudo-elements demos
+| File | Concept |
+| --- | --- |
+| `combinator-selector.html` | Descendant, child, adjacent sibling, and general sibling combinators |
+| `01-pseudo-class.html` | Introduction to pseudo-classes |
+| `psuedo-class.html` | Pseudo-class overview with examples |
+| `pseudo-class/` | Dedicated demos: `:active`, `:checked`, `:empty`, `:first-child` / `:last-child`, `:first-of-type` / `:last-of-type`, `:focus`, `:not()`, `:nth-child()`, `:visited` |
 
-- `psuedo-elements/before-after.html` — shows `::before` and `::after` to insert generated content and decorative shapes.
-- `psuedo-elements/first-line.html` — demonstrates `::first-line` styling for paragraphs or text blocks.
+## 2. Pseudo-elements
 
-## 3. Typography and text layout
+| File | Concept |
+| --- | --- |
+| `psuedo-elements/before-after.html` | `::before` and `::after` for generated content |
+| `psuedo-elements/first-line.html` | `::first-line` styling |
 
-- `08-external-fonts.html` — demonstrates using `@font-face` or external font services to import custom fonts.
-- `09-box-sizing.html` — explains `box-sizing` with examples of content-box and border-box calculation.
-- `13-word-wrap.html` — shows `word-wrap` / `overflow-wrap` and text breaking behavior.
-- `icon fonts.html` — likely demonstrates icon fonts and how to style them with CSS.
-- `Pro5-font.html` — exercises on font properties, font families, font weights, and sizes.
-- `Pro7-text effect.html` — text styling with shadows, gradients, or decorative effects.
-- `var.html` — demonstrates CSS variables (`--custom-property`) and how to use them in text or layout styling.
-- `auto-select.html` — covers `user-select` control to enable or disable text selection.
-- `Pro12-Userinterface outline.html` — explores focus outlines and accessibility styling.
+## 3. Typography and Text
 
-## 4. Box model, overflow, and UI controls
+| File | Concept |
+| --- | --- |
+| `Pro5-font.html` | Font family, weight, and size |
+| `08-external-fonts.html` | Importing external/custom fonts |
+| `icon fonts.html` | Icon fonts |
+| `Pro7-text effect.html` | Text effects |
+| `13-word-wrap.html` | Word wrapping and text breaking |
+| `Pro6-Multiple Columns.html`, `prmulti columns.html` | Multi-column text layout |
+| `var.html` | CSS custom properties (variables) |
 
-- `overflow.html` — demonstrates CSS overflow behavior, scrollbars, and clipping.
-- `Pro2-Borders.html` — examples of border styles, widths, radii, and border-image effects.
-- `Pro3-Backgrounds.html` — demonstrates background colors, images, and gradients.
-- `Pro4-Backgroud.html` — likely a second background exercise with advanced background properties.
-- `Pro6-Multiple Columns.html` — multi-column layout styling using CSS columns.
-- `pro21-table.html` — table styling and layout using CSS properties.
-- `dropdown.html` — CSS-only dropdown menu styling and interaction.
-- `pageloader.html` — a page-loading animation or spinner UI component.
-- `scroll top icon.html` — styling a scroll-to-top icon or button.
-- `task.html` — a general task example, likely a small UI component or challenge.
-- `class-task.html` — demonstrates class-based CSS styling and task-oriented exercises.
-- `task1.html` — a single exercise file inside `tasks/` for CSS practice.
+## 4. Box Model, Borders, and Backgrounds
 
-## 5. Flexbox layout demos
+| File | Concept |
+| --- | --- |
+| `09-box-sizing.html` | `box-sizing` (content-box vs border-box) |
+| `Pro11-userInterface box sizing.html` | `box-sizing` applied to UI elements |
+| `Pro2-Borders.html` | Border styles, widths, and radius |
+| `Pro3-Backgrounds.html`, `Pro4-Backgroud.html` | Background colors, images, and properties |
+| `overflow.html` | Overflow, scrollbars, and clipping |
+| `pro21-table.html` | Table styling |
 
-- `flex.html` — basic flexbox container and item alignment demo.
-- `flex direction.html` — shows `flex-direction` variations: row, column, row-reverse, column-reverse.
-- `flex wrap.html` — demonstrates wrapping flex items with `flex-wrap`.
-- `flex-basic.html` — introductory flexbox example with core container properties.
-- `flex-grow.html` — explains `flex-grow` and how items expand within a row.
-- `flex-shrink.html` — shows `flex-shrink` and how items contract in limited space.
-- `flex-order.html` — demonstrates reordering flex items with the `order` property.
-- `align-item.html` — explains `align-items` for cross-axis alignment inside flex containers.
-- `align-content.html` — demonstrates `align-content` for flex lines distribution.
-- `align-self.html` — shows how individual flex items override alignment with `align-self`.
-- `flex wrap.html` — likely a second flex-wrap example focusing on responsive behavior.
-- `blankflex.html` — a blank flex playground for testing flexbox layouts.
-- `fiex-direction.html` — probably a typo file focused on `flex-direction` as a second example.
-- `flex (2).html` — another flexbox example or advanced flex layout.
+## 5. Flexbox
 
-## 6. Grid layout demos
+| File | Concept |
+| --- | --- |
+| `flex.html`, `flex (2).html`, `flex-basic.html` | Flex container and item basics |
+| `flex direction.html`, `fiex-direction.html` | `flex-direction` |
+| `flex wrap.html`, `flex-wrap.html` | `flex-wrap` |
+| `flex-grow.html` | `flex-grow` |
+| `flex-shrink.html` | `flex-shrink` |
+| `flex-order.html` | `order` |
+| `justify-content.html` | `justify-content` |
+| `align-item.html` | `align-items` |
+| `align-content.html` | `align-content` |
+| `align-self.html` | `align-self` |
+| `justify and align content.html` | `justify-content` and `align-content` together |
+| `blankflex.html` | Flexbox playground |
 
-- `grid.html` — basic CSS Grid container and item placement.
-- `grid position.html` — demonstrates explicit grid positioning and naming grid cells.
-- `grid-area.html` — shows `grid-area` for named grid item placement.
-- `grid-area (2).html` — a second example of using `grid-area` for layouts.
-- `grid (2).html` — another grid layout demo, likely a distinct pattern or design.
-- `pro27-grid spanning.html` — demonstrates spanning items across multiple rows/columns.
-- `pro28-grid lines.html` — shows explicit line placement using grid line numbers.
-- `pro30-minmax function grid.html` — explains the `minmax()` function for responsive grid tracks.
-- `pro31-Implict & explict.html` — compares implicit and explicit grid tracks.
-- `pro33-Aligning tricks grid items.html` — advanced alignment techniques for grid items.
-- `grid basic diagram.png` — a reference diagram image used by grid demos.
+## 6. Grid
 
-## 7. Transforms, transitions, and animation
+| File | Concept |
+| --- | --- |
+| `grid.html`, `grid (2).html` | Grid container and item basics |
+| `grid basic diagram.png` | Reference diagram for grid concepts |
+| `grid position.html` | Positioning grid items |
+| `grid-area.html` | Placement with `grid-area` |
+| `pro27-grid spanning.html` | Spanning rows and columns |
+| `pro28-grid lines.html` | Placement using grid line numbers |
+| `pro30-minmax function grid.html` | The `minmax()` function |
+| `pro31-Implict & explict.html` | Implicit vs explicit grid |
+| `pro33-Aligning tricks grid items.html` | Aligning grid items |
 
-- `transform.html` — basic `transform` examples such as translate, rotate, scale, skew.
-- `translate.html` — specific demo of `translate()` transform behavior.
-- `scale.html` — specific demo of `scale()` transform behavior.
-- `skew.html` — specific demo of `skew()` transform behavior.
-- `matrix.html` — demonstrates `matrix()` transform for combined transforms.
-- `perspective.html` — demos 3D perspective and how perspective affects nested elements.
-- `animation.html` — introduces CSS animations with `@keyframes` and animation properties.
-- `Animation-fill-mode.html` — demonstrates the `animation-fill-mode` property to preserve end state.
-- `animation heart.html` — a themed animation example that animates a heart shape or icon.
-- `heart animation.html` — a second heart animation demonstration.
-- `heart-beats.html` — uses animation timing and scaling to simulate a heartbeat effect.
-- `Dancing Animation.html` — a creative animation example with dancing or motion effects.
-- `pro20-Animation2.html` — another animation exercise focusing on keyframes and timing.
-- `Pro1_Animation.html` — a primary animation exercise, likely the first project in a series.
-- `pro22-filter.html` — shows CSS filter effects that can be animated for visual transitions.
-- `progress bar using animation.html` — animated progress bar UI using CSS keyframes.
-- `overlay image.html` — combines overlays and subtle animation effects over images.
-- `parallax effect.html` — a scrolling parallax effect using CSS and perhaps background attachment or transforms.
-- `parallax effect with contect.html` — a parallax example with content overlay integrated into the effect.
+## 7. Transforms and Transitions
 
-## 8. Filter, visual effects, and images
+| File | Concept |
+| --- | --- |
+| `transform.html` | Transform basics |
+| `translate.html` | `translate()` |
+| `scale.html` | `scale()` |
+| `skew.html` | `skew()` |
+| `matrix.html` | `matrix()` |
+| `perspective.html` | 3D `perspective` |
+| `Pro13` to `Pro17 - 2D Transform.html` | 2D transform exercises |
+| `Pro18-3D Transform.html`, `Pro19-3D Transform.html` | 3D transform exercises |
+| `Pro8-Transition Effects.html`, `Pro9-Transition Effects.html` | Transition effects |
+| `transition-property.html` | `transition-property` |
 
-- `filter.html` — demonstrates CSS filter properties such as blur, brightness, contrast, and drop-shadow.
-- `pro22-filter.html` — additional filter-related exercises or advanced filter combinations.
-- `image-rendering.html` — shows the `image-rendering` property and how browser scaling affects images.
-- `overlay.html` — creates overlay effects, likely with translucent layers and blend modes.
-- `overlay image.html` — overlays applied directly to images for caption or effects.
-- `svg.html` — CSS styling applied to inline SVG or SVG image elements.
-- `googlemap.html` — likely a styled map embed or a Google Maps-like layout effect using CSS.
+## 8. Animations
 
-## 9. Advanced and interface properties
+| File | Concept |
+| --- | --- |
+| `animation.html` | `@keyframes` and animation properties |
+| `Pro1_Animation.html`, `pro20-Animation2.html` | Animation exercises |
+| `Animation-fill-mode.html` | `animation-fill-mode` |
+| `Dancing Animation.html` | Motion animation demo |
+| `animation heart.html`, `heart animation.html`, `heart-beats.html` | Heart and heartbeat animations |
+| `progress bar using animation.html` | Animated progress bar |
 
-- `Pro10-userInterface resize properties.html` — demonstrates UI resize controls and `resize` property behavior.
-- `Pro10-userInterface.html` — general user interface styling and form controls.
-- `Pro11-userInterface box sizing.html` — likely focused on UI layout with `box-sizing` in form elements.
-- `Pro12-Userinterface.html` — more interface styling exercises, possibly with buttons, inputs, and menu examples.
-- `Pro13-2D Transform.html` — 2D transform examples and interactions.
-- `Pro14-2D Transform.html` — second 2D transform exercise.
-- `Pro15-2D Transform.html` — another example of 2D transform composition.
-- `Pro16-2D Transform.html` — advanced 2D transformation patterns.
-- `Pro17-2D Transform.html` — additional transform and design practice.
-- `Pro18-3D Transform.html` — 3D transform example for depth and rotation.
-- `Pro19-3D Transform.html` — another 3D transform demonstration.
-- `Pro23-Userselect.html` — example using `user-select` property to enable or disable text selection.
-- `justify-content.html` — demonstrates `justify-content` for main-axis spacing in flex containers.
-- `justify and align content.html` — combined layout example showing both `justify-content` and `align-content`.
-- `image/` — contains image assets used by the demos; not a code example folder.
+## 9. Filters, Images, and Visual Effects
 
-## 10. Practice and assessment tasks
+| File | Concept |
+| --- | --- |
+| `filter.html`, `pro22-filter.html` | CSS filters |
+| `image-rendering.html` | `image-rendering` |
+| `overlay.html`, `overlay image.html` | Overlay effects |
+| `parallax effect.html`, `parallax effect with contect.html` | Parallax scrolling |
+| `svg.html` | SVG styling |
+| `googlemap.html` | Embedded map |
 
-- `tasks/task1.html` — a dedicated exercise file for completing a CSS task or challenge.
-- `task.html` — likely a broader practice task or mini-project requiring CSS layout and styling.
+## 10. User Interface Properties
 
-## Notes on file naming and organization
+| File | Concept |
+| --- | --- |
+| `07-resize.html` | `resize` property |
+| `Pro10-userInterface.html`, `Pro10-userInterface resize properties.html` | UI and resize properties |
+| `Pro12-Userinterface.html`, `Pro12-Userinterface outline.html` | UI styling and outlines |
+| `Pro23-Userselect.html`, `auto-select.html` | `user-select` |
+| `html scroll behaviour.html`, `html-scroll-behaviour.html` | Smooth scroll behavior |
 
-- Files with `Pro` or `pro` prefixes are likely course projects or structured exercises.
-- Files with spaces in names are actual demo pages; opening them in a browser works the same as any `.html` file.
-- The `pseudo-class`, `psuedo-elements`, and `tasks` subfolders are focused areas for interactive selectors and exercises.
+## 11. Components and Practice Tasks
 
-## Recommended learning path
+| File | Concept |
+| --- | --- |
+| `dropdown.html` | CSS dropdown menu |
+| `pageloader.html` | Page loader animation |
+| `scroll top icon.html` | Scroll-to-top button |
+| `class-task.html`, `task.html` | Class and practice tasks |
+| `tasks/` | Additional practice exercises |
 
-1. Start with selector and pseudo-class demos.
-2. Move into typography, box model, and text layout examples.
-3. Explore flexbox and grid layout pages for responsive design practice.
-4. Study transforms, transitions, and animation pages for motion design.
-5. Finish with UI effects, filters, and problem-solving tasks.
+## Getting Started
 
----
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AmanPatil2002/CSS3-program.git
+   ```
+2. Open any `.html` file in your browser (or use the *Live Server* extension in VS Code).
+3. View the page source to study the CSS, then edit it and refresh to experiment.
 
-## Contact
+No installation or build tools are required. A few pages (external fonts, icon fonts, Google Map) need an internet connection.
 
-If you want to extend this collection, add a short description at the top of each HTML file or create a second README inside the relevant subfolder.
+## Suggested Learning Path
+
+1. Selectors and pseudo-classes
+2. Typography, the box model, borders, and backgrounds
+3. Flexbox and Grid layouts
+4. Transforms, transitions, and animations
+5. Filters, UI properties, and the practice tasks
+
+## Author
+
+**Aman Patil** — [@AmanPatil2002](https://github.com/AmanPatil2002)
